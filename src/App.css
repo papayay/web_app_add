@@ -1,0 +1,43 @@
+.cards-container {
+  display: flex;
+  flex-direction: row; /* 使卡片横向排列 */
+  justify-content: center; /* 居中对齐卡片 */
+  gap: 20px; /* 控制卡片之间的间隙 */
+  padding: 20px; /* 添加一些内边距 */
+  overflow-x: auto; /* 如果卡片过多，允许横向滚动 */
+}
+
+/* 个性化单个卡片的样式 */
+.UserCard {
+  flex: 0 0 auto; /* 卡片不伸缩，不收缩，基于内容自动调整宽度 */
+  background-color: #f5f5f5; /* 卡片背景色 */
+  border-radius: 8px; /* 圆角边框 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 轻微阴影效果 */
+  /* 可以添加其他样式，比如边距、内边距等 */
+}
+
+/* 可以根据需要添加更多样式，比如卡片标题、文本等的颜色 */
+.UserCard h6 {
+  color: #333; /* 标题颜色 */
+}
+
+.UserCard p {
+  color: #666; /* 文本颜色 */
+}
+
+/* App.css */
+.App {
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 20px;
+}
+
+/* 隐藏滚动条 */
+.cards-container::-webkit-scrollbar {
+  display: none;
+}
